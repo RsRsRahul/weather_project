@@ -9,7 +9,7 @@ const Location = () => {
      const [a,seta]=useState();
      const [b,setb]=useState();
      const [c,setc]=useState();
-     const pc =["london","dallas","new york","singapore","goa","mexico"]
+     const pc =["london","dallas","new york","madrid","goa","mexico"]
      const newpc=pc.map(pop)
      var maincity;
      const first=()=>{
