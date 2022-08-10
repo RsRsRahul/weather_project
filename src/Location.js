@@ -9,7 +9,7 @@ const Location = () => {
      const [a,seta]=useState();
      const [b,setb]=useState();
      const [c,setc]=useState();
-     const pc =["london","dallas","new york","madrid","goa","mexico"]
+     const pc =["london","california","new york","madrid","goa","mexico"]
      const newpc=pc.map(pop)
      var maincity;
      const first=()=>{
@@ -28,7 +28,7 @@ const Location = () => {
     <div >
       <center className='hi'>
             <h2 className='ques'>Enter your city</h2>
-            <input type="text" className='but'   onChange={(e)=>{setcity(e.target.value)} } />
+            <input type="text" className='but'  placeholder='Enter a City' onChange={(e)=>{setcity(e.target.value)} } />
              <button className='fa fa-search  sub' onClick={()=>first()} ></button> 
              </center>
              {x?
@@ -42,7 +42,7 @@ const Location = () => {
               <p>HUMIDITY: {d.humidity}</p>
               <p>PRESSURE : {d.pressure_mb}</p>
               <p>WIND : {d.wind_mph}MPH</p>
-              {/* <p>MINIMUM TEMP : {d.temp_min}&#176;F</p> */}
+              <p>FAHRENHIET : {d.temp_f}&#176;F</p>
               </div>
               </center>:
              null
